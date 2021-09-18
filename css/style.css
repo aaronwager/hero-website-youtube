@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Google Font */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Reset */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Universal Styles */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0.25rem;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  padding: 0 0.25rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* Button styles */
+
+.btn {
+  padding: 0.75rem 0.75rem;
+  display: inline-block;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #fb2056;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Navigation Section */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#navbar nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar nav ul li {
+  font-size: 1.1rem;
+}
+
+#navbar nav ul a {
+  margin-right: 0.25rem;
+  padding: 0.75rem;
+  color: #fff;
+}
+
+/* Logo */
+
+#navbar .logo h1 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+/* Header */
+
+.hero {
+  background: url(/img/hero.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+header .header-container {
+  height: 100vh;
+  /* parent element of content. Allows us to center (.content) text on the page */
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  color: #fff;
+}
+
+header .content h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin: 0.25rem 0.75rem;
+  letter-spacing: 4px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* Image overlay */
+}
+
+.hero * {
+  z-index: 10;
+  /* Brings all .hero content in front of the overlay */
+}
